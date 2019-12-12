@@ -32,7 +32,7 @@ public class StartCrawl {
         for (String key : object.getTree().keySet()) {
             String value = object.getTree().get(key);
             System.out.println(key + "  " + value);
-            StartCrawl.newindex=906;
+            StartCrawl.newindex=913;    //指定最新的集数
             if(Integer.parseInt(key)>StartCrawl.newindex) {
                 SendEmailUtil.send();
             }
